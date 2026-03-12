@@ -1,5 +1,4 @@
-//UC5 
-
+//uc5
 import java.util.Stack;
 
 public class UseCasePalindromeCheckerApp {
