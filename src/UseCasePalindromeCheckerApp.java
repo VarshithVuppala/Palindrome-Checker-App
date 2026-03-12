@@ -1,4 +1,4 @@
-//UseCase11
+//usecase11
 
 class PalindromeService {
 
