@@ -1,5 +1,6 @@
 //UseCase13
 
+
 public class UseCasePalindromeCheckerApp {
 
     public static boolean twoPointerMethod(String input) {
