@@ -1,17 +1,29 @@
-/**
- * ============================================================
- * MAIN CLASS - UseCase1PalindromeCheckerApp
- * ============================================================
- *
- * UC1: Application Entry & Welcome Message
- */
+import java.util.LinkedList;
 
 public class UseCasePalindromeCheckerApp {
 
     public static void main(String[] args) {
 
-        System.out.println("Welcome to the Palindrome Checker Management System");
-        System.out.println("Version : 1.0");
-        System.out.println("System initialized successfully.");
+        String input = "madam";
+        LinkedList<Character> list = new LinkedList<>();
+
+        for (char ch : input.toCharArray()) {
+            list.add(ch);
+        }
+
+        boolean isPalindrome = true;
+
+        while (list.size() > 1) {
+            if (!list.removeFirst().equals(list.removeLast())) {
+                isPalindrome = false;
+                break;
+            }
+        }
+
+        if (isPalindrome) {
+            System.out.println("The given string is a Palindrome");
+        } else {
+            System.out.println("The given string is NOT a Palindrome");
+        }
     }
 }
